@@ -20,8 +20,8 @@
         {
             "atomType": "Molecule",
             "name": "Cabinet Top",
-            "x": 0.2149866190900981,
-            "y": 0.583904109589041,
+            "x": 0.20651204281891167,
+            "y": 0.5993150684931506,
             "uniqueID": 1749207110586,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -58,8 +58,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.20026761819803746,
-                            "y": 0.3082191780821918,
+                            "x": 0.3153434433541481,
+                            "y": 0.3784246575342466,
                             "uniqueID": 1749207180300,
                             "ioValues": [
                                 {
@@ -72,9 +72,22 @@
                                 }
                             ],
                             "description": "Creates a new rectangle."
+                        },
+                        {
+                            "atomType": "ExtractTag",
+                            "name": "Extract Tag",
+                            "x": 0.17484388938447815,
+                            "y": 0.3184931506849315,
+                            "uniqueID": 1749207562751,
+                            "ioValues": [],
+                            "description": "Extracts geometry containing the specified tag.",
+                            "tag": "",
+                            "tagIndex": 0
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        null
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 }
@@ -92,6 +105,36 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 0.73
+        },
+        {
+            "atomType": "Constant",
+            "name": "Cabinet Width",
+            "x": 0.07136485280999108,
+            "y": 0.452054794520548,
+            "uniqueID": 1749207375150,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 27
+        },
+        {
+            "atomType": "Constant",
+            "name": "Cabinet Height",
+            "x": 0.07091882247992863,
+            "y": 0.6078767123287672,
+            "uniqueID": 1749207420254,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 30
+        },
+        {
+            "atomType": "Constant",
+            "name": "Cabinet Depth",
+            "x": 0.07091882247992863,
+            "y": 0.7671232876712328,
+            "uniqueID": 1749207509154,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 23
         }
     ],
     "allConnectors": [],
