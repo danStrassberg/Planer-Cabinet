@@ -19,11 +19,28 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Cabinet Top",
-            "x": 0.20651204281891167,
-            "y": 0.5993150684931506,
+            "name": "Flip Top",
+            "x": 0.29259589652096346,
+            "y": 0.2808219178082192,
             "uniqueID": 1749207110586,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Width",
+                    "ioValue": 27
+                },
+                {
+                    "name": "Height",
+                    "ioValue": 30
+                },
+                {
+                    "name": "Depth",
+                    "ioValue": 23
+                },
+                {
+                    "name": "Ply Thickness",
+                    "ioValue": 0.73
+                }
+            ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -42,7 +59,12 @@
                     "x": 0.27698483496877785,
                     "y": 0.3133561643835616,
                     "uniqueID": 1749207152213,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "name1",
+                            "ioValue": 10
+                        }
+                    ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
                     "topLevel": false,
                     "allAtoms": [
@@ -58,8 +80,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.3153434433541481,
-                            "y": 0.3784246575342466,
+                            "x": 0.292149866190901,
+                            "y": 0.3321917808219178,
                             "uniqueID": 1749207180300,
                             "ioValues": [
                                 {
@@ -74,22 +96,59 @@
                             "description": "Creates a new rectangle."
                         },
                         {
-                            "atomType": "ExtractTag",
-                            "name": "Extract Tag",
-                            "x": 0.17484388938447815,
-                            "y": 0.3184931506849315,
-                            "uniqueID": 1749207562751,
+                            "atomType": "Input",
+                            "name": "name1",
+                            "x": 0.04,
+                            "y": 0.2842465753424658,
+                            "uniqueID": 1749207667720,
                             "ioValues": [],
-                            "description": "Extracts geometry containing the specified tag.",
-                            "tag": "",
-                            "tagIndex": 0
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
                         }
                     ],
-                    "allConnectors": [
-                        null
-                    ],
+                    "allConnectors": [],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Width",
+                    "x": 0.04,
+                    "y": 0.3321917808219178,
+                    "uniqueID": 1749207689840,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Height",
+                    "x": 0.04,
+                    "y": 0.4606164383561644,
+                    "uniqueID": 1749207705491,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Depth",
+                    "x": 0.04,
+                    "y": 0.5941780821917808,
+                    "uniqueID": 1749207755807,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Ply Thickness",
+                    "x": 0.04,
+                    "y": 0.18664383561643835,
+                    "uniqueID": 1749207815274,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [],
@@ -129,15 +188,44 @@
         {
             "atomType": "Constant",
             "name": "Cabinet Depth",
-            "x": 0.07091882247992863,
-            "y": 0.7671232876712328,
+            "x": 0.0704727921498662,
+            "y": 0.7585616438356165,
             "uniqueID": 1749207509154,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 23
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number",
+            "ap2Name": "Ply Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1749207234654,
+            "ap2ID": 1749207110586
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Width",
+            "ap2Primary": false,
+            "ap1ID": 1749207375150,
+            "ap2ID": 1749207110586
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Height",
+            "ap2Primary": false,
+            "ap1ID": 1749207420254,
+            "ap2ID": 1749207110586
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Depth",
+            "ap2Primary": false,
+            "ap1ID": 1749207509154,
+            "ap2ID": 1749207110586
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
